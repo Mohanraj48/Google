@@ -13,7 +13,6 @@ public class GooglePageTest
 	@Test
 	public void setup() throws Exception
 	{
-		
 		System.setProperty("webdriver.chrome.driver", "E:/Mohan/jarfiles/WebDrivers/Chrome/chromedriver_win32/chromedriver.exe");
 		WebDriver d=new ChromeDriver();
 		d.manage().window().maximize();
@@ -21,9 +20,8 @@ public class GooglePageTest
 		d.get("https://www.google.co.in");
 		Assert.assertTrue(d.getTitle().contains("Google"));
 		d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		d.quit();
-
 	}
 	
 	
