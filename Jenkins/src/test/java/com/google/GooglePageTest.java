@@ -22,11 +22,8 @@ public class GooglePageTest
 		Assert.assertTrue(d.getTitle().contains("Google"));
 		d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(3000);
-		
-		
 		d.quit();
-		
-		
+
 	}
 	
 	
