@@ -20,7 +20,7 @@ public class GooglePageTest
 		d.get("https://www.google.co.in");
 		Assert.assertTrue(d.getTitle().contains("Google"));
 		d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		d.quit();
 	}
 	
